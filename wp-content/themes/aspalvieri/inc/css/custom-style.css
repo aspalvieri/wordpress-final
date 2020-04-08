@@ -1,0 +1,148 @@
+/* Custom styles */
+
+.masthead {
+    padding: 0;
+    position: relative;
+}
+.masthead::before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+div.menu-main-container {
+    margin-left: 50px;
+}
+
+div.grid-nav-bottom {
+    display: none;
+}
+
+.masthead h1, .masthead h3 {
+    top: 40%;
+    font-size: 76px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+}
+.masthead h3 {
+    font-size: 48px;
+    top: 52%;
+}
+
+header.page-header {
+    float: none;
+}
+
+header > h1.page-title {
+    float: none;
+    text-align: center;
+    font-size: 22px;
+}
+
+.movie-content img {
+    width: 300px;
+    min-height: 150px;
+    max-height: 300px;
+}
+
+main#main.site-main > section > h2 {
+    text-align: center;
+    color: black;
+    font-size: 22;
+}
+
+div#content.site-content > div.wrap > div#primary.content-area {
+    float: unset;
+    width: unset;
+}
+
+div.post-display img {
+    width: 190px;
+    height: 190px;
+    float: left;
+    margin: 0 15px;
+}
+div.post-display h2 {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+}
+
+/* Game Store - Primary */
+div.game-store {
+    width: 100%;
+    border: 2px solid rgba(168, 168, 168, 0.25);
+    margin: 10px 0;
+    padding: 15px;
+    display: grid;
+    grid-template-areas: 
+        "image content";
+    grid-template-rows: auto;
+    grid-template-columns: 30% 70%;
+}
+div.game-store div.game-store-image {
+    width: 270px;
+    height: 270px;
+    border: 1px solid black;
+    vertical-align: middle;
+    grid-area: image;
+}
+div.game-store div.game-store-image img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+div.game-store div.game-store-content {
+    grid-area: content;
+    padding-left: 15px;
+}
+div.game-store div.game-store-content p {
+    margin: 0;
+}
+div.game-store a {
+    color: blue;
+}
+
+/* Game Store - Shortcode */
+div.game-store-short {
+    width: 400px;
+    height: 250px;
+    border: 2px solid rgba(168, 168, 168, 0.25);
+    margin: 10px 0;
+    padding: 15px;
+    display: grid;
+    grid-template-areas: 
+        "image content";
+    grid-template-rows: auto;
+    grid-template-columns: 60% 40%;
+}
+div.game-store-short div.game-store-image {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    vertical-align: middle;
+    grid-area: image;
+}
+div.game-store-short div.game-store-image img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+div.game-store-short div.game-store-content {
+    grid-area: content;
+    padding-left: 15px;
+}
+div.game-store-short div.game-store-content p {
+    margin: 0;
+}
+div.game-store-short-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+div.game-store-short a {
+    color: blue;
+}
